@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  color: #c8102e;
+}
+
+p {
+  text-align: justify;
+}
+
+.p-footer {
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #c8102e;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.featured-image2 {
+  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-img {
+  width: 7%;
+}
+
+.tim-img {
+  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile img {
+  max-width: 200px;
+}
+
+.profile .card {
+  max-height: 200px !important;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.jumbotron {
+  background-image: url("assets/image/fotoskuad.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #c8102e;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1.5;
+}
+
+header {
+  display: inline;
+}
+
+.card h2 {
+  color: #c8102e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.card th,
+.card td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.card th {
+  background-color: #c8102e;
+  color: white;
+}
+
+.card tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+.card .tim-img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tim {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  color: #c8102e;
+  border-bottom: 2px solid #c8102e;
+  padding-bottom: 10px;
+}
+
+.team-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.manager,
+.coaches,
+.director,
+.chairman,
+.vice-chairman {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.manager h3,
+.coaches h3,
+.director h3,
+.chairman h3,
+.vice-chairman h3 {
+  color: #c8102e;
+  margin-bottom: 5px;
+}
+
+.manager p,
+.coaches p,
+.director p,
+.chairman p,
+.vice-chairman p {
+  margin: 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
